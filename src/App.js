@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import profileImage from './assets/jeff.jpg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <section className="hero">
+        <figure className="profile-image">
+          <img src={profileImage} alt="Jeff" />
+        </figure>
+        <h1>Hi, I'm Jeff!</h1>
+        <h3 className="title">Solutions Engineer & Empathetic Advisor</h3>
+        <blockquote className="quote">"I'm gonna eat your brains and gain your knowledge."</blockquote>
+      </section>
+      <footer className="footer">
+        <a href="https://www.linkedin.com/in/jfgrand/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/gritchou" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://twitter.com/gritchou" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </footer>
+    </main>
   );
 }
 
