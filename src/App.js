@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
 import profileImage from './assets/jeff.jpg';
+import backgroundImage from './assets/background.png';
 
 function App() {
   return (
-    <main className="App">
+    <main className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <section className="hero">
         <figure className="profile-image">
           <img src={profileImage} alt="Jeff" />
